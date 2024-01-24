@@ -1,0 +1,182 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --theme_color: #9600ff;
+    --duration: 20s;
+    --main_border: 8px;
+    --move: 5px;
+    --move_2: -5px;
+}
+
+@keyframes bg {
+    0% {
+        background-color: #9600ff;
+    }
+
+    25% {
+        background-color: #0085ff;
+    }
+
+    50% {
+        background-color: #607d8b;
+    }
+
+    100% {
+        background-color: #673ab7;
+    }
+}
+
+@keyframes mbg {
+    0% {
+        background-color: #9600ff;
+        border: var(--main_border) solid #9600ff;
+    }
+
+    25% {
+        background-color: #0085ff;
+        border: var(--main_border) solid #0085ff;
+    }
+
+    50% {
+        background-color: #607d8b;
+        border: var(--main_border) solid #607d8b;
+    }
+
+    100% {
+        background-color: #673ab7;
+        border: var(--main_border) solid #673ab7;
+    }
+}
+
+@keyframes move {
+    from {
+        transform: translateY(var(--move));
+        -webkit-transform: translateY(var(--move));
+        -moz-transform: translateY(var(--move));
+        -ms-transform: translateY(var(--move));
+        -o-transform: translateY(var(--move));
+    }
+
+    to {
+        transform: translateY(var(--move_2));
+        -webkit-transform: translateY(var(--move_2));
+        -moz-transform: translateY(var(--move_2));
+        -ms-transform: translateY(var(--move_2));
+        -o-transform: translateY(var(--move_2));
+    }
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-color: var(--theme_color)8 */
+    animation: bg var(--duration) linear infinite alternate;
+    -webkit-animation: bg var(--duration) linear infinite alternate;
+}
+
+.calculator {
+    animation: move 3s linear infinite alternate-reverse;
+    -webkit-animation: move 3s linear infinite alternate-reverse;
+}
+
+.main {
+    background-color: #1b1b1b;
+    border-radius: 10px;
+    padding: 20px;
+    height: 500px;
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    /*background-color: var(--theme_color);
+    */
+    box-shadow: 15px 15px 15px #0000004d, inset 15px 15px 15px #0000004d, inset -10px -10px 20px #ffffff31, -10px -10px 20px #ffffff31;
+    animation: mbg var(--duration) linear infinite alternate;
+    -webkit-animation: mbg var(--duration) linear infinite alternate;
+}
+
+.display {
+    position: absolute;
+    top: 0;
+    margin-top: 20px;
+    width: 90%;
+    height: 50px;
+}
+
+.display input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset -5px -5px 10px #ffffff28,
+        inset 5px 5px 10px #00000046;
+    animation: bg var(--duration) linear infinite alternate;
+    -webkit-animation: bg var(--duration) linear infinite alternate;
+    color: white;
+    font-size: 32px;
+    text-align: right;
+    padding: 5px 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.buttons-div {
+    height: calc(100% - 90px);
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.buttons-div .row {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.buttons-div .row .btn {
+    width: 30%;
+    padding: 20px 10px;
+    cursor: pointer;
+    border: 1px solid #80808017;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    /* background-color: var(--theme_color); */
+    box-shadow: inset -5px -5px 10px #ffffff1e,
+        inset 5px 5px 10px #00000046;
+    color: white;
+    animation: bg var(--duration) linear infinite alternate;
+    -webkit-animation: bg var(--duration) linear infinite alternate;
+}
+
+.buttons-div .row-6 .equals-to {
+    width: 45%;
+    box-shadow: -5px -5px 10px #ffffff2f,
+    5px 5px 10px #00000034;
+}
