@@ -104,8 +104,8 @@ body {
     /*background-color: var(--theme_color);
     */
     box-shadow: 15px 15px 15px #0000004d, inset 15px 15px 15px #0000004d, inset -10px -10px 20px #ffffff31, -10px -10px 20px #ffffff31;
-    animation: mbg var(--duration) linear infinite alternate;
-    -webkit-animation: mbg var(--duration) linear infinite alternate;
+    /*animation: mbg var(--duration) linear infinite alternate;
+    -webkit-animation: mbg var(--duration) linear infinite alternate;*/
 }
 
 .display {
@@ -124,8 +124,8 @@ body {
     border-radius: 10px;
     box-shadow: inset -5px -5px 10px #ffffff28,
         inset 5px 5px 10px #00000046;
-    animation: bg var(--duration) linear infinite alternate;
-    -webkit-animation: bg var(--duration) linear infinite alternate;
+    /*animation: bg var(--duration) linear infinite alternate;
+    -webkit-animation: bg var(--duration) linear infinite alternate;*/
     color: white;
     font-size: 32px;
     text-align: right;
@@ -171,8 +171,8 @@ body {
     box-shadow: inset -5px -5px 10px #ffffff1e,
         inset 5px 5px 10px #00000046;
     color: white;
-    animation: bg var(--duration) linear infinite alternate;
-    -webkit-animation: bg var(--duration) linear infinite alternate;
+   /* animation: bg var(--duration) linear infinite alternate;
+    -webkit-animation: bg var(--duration) linear infinite alternate;*/
 }
 
 .buttons-div .row-6 .equals-to {
