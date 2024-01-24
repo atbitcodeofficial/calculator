@@ -77,13 +77,13 @@ body {
     align-items: center;
     text-align: center;
     /* background-color: var(--theme_color)8 */
-    animation: bg var(--duration) linear infinite alternate;
-    -webkit-animation: bg var(--duration) linear infinite alternate;
+    /*animation: bg var(--duration) linear infinite alternate;
+    -webkit-animation: bg var(--duration) linear infinite alternate;*/
 }
 
 .calculator {
-    animation: move 3s linear infinite alternate-reverse;
-    -webkit-animation: move 3s linear infinite alternate-reverse;
+   /* animation: move 3s linear infinite alternate-reverse;
+    -webkit-animation: move 3s linear infinite alternate-reverse;*/
 }
 
 .main {
