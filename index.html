@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="main">
+            <div class="display">
+                <input type="text" name="display" class="display-input" readonly>
+            </div>
+            <div class="buttons-div">
+                <div class="row row-1">
+                    <button class="btn delete" onclick="delt(display.value)">
+                        <p>DEL</p>
+                    </button>
+                    <button class="btn clear" onclick="all_clear()">
+                        <p>AC</p>
+                    </button>
+                    <button class="btn percentage button" onclick="print(percentage.textContent)">
+                        <p>%</p>
+                    </button>
+                    <button class="btn divide button" onclick="print(divide.textContent)">
+                        <p>/</p>
+                    </button>
+                </div>
+                <div class="row row-2">
+                    <button class="btn sqrt" onclick="sprint(sqrt.textContent)">
+                        <p>sqrt</p>
+                    </button>
+                    <button class="btn sqr" onclick="sprint(sqr.textContent)">
+                        <p>sqr</p>
+                    </button>
+                    <button class="btn cube" onclick="sprint(cube.textContent)">
+                        <p>cube</p>
+                    </button>
+                    <button class="btn pie" onclick="pprint(pie.textContent)">
+                        <p>pie</p>
+                    </button>
+                </div>
+                <div class="row row-3">
+                    <button class="btn seven button" onclick="print(seven.textContent)">
+                        <p>7</p>
+                    </button>
+                    <button class="btn eight button" onclick="print(eight.textContent)">
+                        <p>8</p>
+                    </button>
+                    <button class="btn nine button" onclick="print(nine.textContent)">
+                        <p>9</p>
+                    </button>
+                    <button class="btn plus button" onclick="print(plus.textContent)">
+                        <p>+</p>
+                    </button>
+                </div>
+                <div class="row row-4">
+                    <button class="btn four button" onclick="print(four.textContent)">
+                        <p>4</p>
+                    </button>
+                    <button class="btn five button" onclick="print(five.textContent)">
+                        <p>5</p>
+                    </button>
+                    <button class="btn six button" onclick="print(six.textContent)">
+                        <p>6</p>
+                    </button>
+                    <button class="btn minus button" onclick="print(minus.textContent)">
+                        <p>-</p>
+                    </button>
+                </div>
+                <div class="row row-5">
+                    <button class="btn one button" onclick="print(one.textContent)">
+                        <p>1</p>
+                    </button>
+                    <button class="btn two button" onclick="print(two.textContent)">
+                        <p>2</p>
+                    </button>
+                    <button class="btn three button" onclick="print(three.textContent)">
+                        <p>3</p>
+                    </button>
+                    <button class="btn multiply button" onclick="print(multiply.textContent)">
+                        <p>*</p>
+                    </button>
+                </div>
+                <div class="row row-6">
+                    <button class="btn dot button" onclick="print(dot.textContent)">
+                        <p>.</p>
+                    </button>
+                    <button class="btn zero button" onclick="print(zero.textContent)">
+                        <p>0</p>
+                    </button>
+                    <button class="btn equals-to" onclick="result(display.value)">
+                        <p>=</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
