@@ -76,7 +76,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* background-color: var(--theme_color)8 */
+    background-color: var(--theme_color);
     /*animation: bg var(--duration) linear infinite alternate;
     -webkit-animation: bg var(--duration) linear infinite alternate;*/
 }
@@ -101,8 +101,7 @@ body {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    /*background-color: var(--theme_color);
-    */
+    background-color: var(--theme_color);
     box-shadow: 15px 15px 15px #0000004d, inset 15px 15px 15px #0000004d, inset -10px -10px 20px #ffffff31, -10px -10px 20px #ffffff31;
     /*animation: mbg var(--duration) linear infinite alternate;
     -webkit-animation: mbg var(--duration) linear infinite alternate;*/
@@ -126,6 +125,7 @@ body {
         inset 5px 5px 10px #00000046;
     /*animation: bg var(--duration) linear infinite alternate;
     -webkit-animation: bg var(--duration) linear infinite alternate;*/
+    background-color: var(--theme_color);
     color: white;
     font-size: 32px;
     text-align: right;
@@ -167,7 +167,7 @@ body {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    /* background-color: var(--theme_color); */
+    background-color: var(--theme_color); 
     box-shadow: inset -5px -5px 10px #ffffff1e,
         inset 5px 5px 10px #00000046;
     color: white;
